@@ -11,8 +11,10 @@ const Medias = [10, 7.5, 6, 9];
 const ArrayAlunosEMedias = [Alunos, Medias];
 
 function exibeNomeENota(aluno) {
-    const index = ArrayAlunosEMedias[0].indexOf(aluno)
-    const MediaDoAluno = ArrayAlunosEMedias[1][index]
+    //const alunos = ArrayAlunosEMedias[0];
+    //const medias = ArrayAlunosEMedias[1];
+    const index = ArrayAlunosEMedias[0].indexOf(aluno);
+    const MediaDoAluno = ArrayAlunosEMedias[1][index];
 
     if(ArrayAlunosEMedias[0].includes(aluno)) {//includes verifica se existe um certo elemento que você procura no Array e retorna true ou false
         console.log(`${aluno} tem a média ${MediaDoAluno}`)
